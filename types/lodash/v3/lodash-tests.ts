@@ -2194,7 +2194,7 @@ namespace TestUnique {
     }
 }
 
-// _.upzip
+// _.unzip
 namespace TestUnzip {
     let array = [['a', 'b'], [1, 2], [true, false]];
 
@@ -2517,6 +2517,21 @@ result = <number[]>_([1, 2]).zipWith<number>(testZipWithFn).value();
 result = <number[]>_([1, 2]).zipWith<number>(testZipWithFn, any).value();
 result = <number[]>_([1, 2]).zipWith<number>([1, 2], testZipWithFn, any).value();
 result = <number[]>_([1, 2]).zipWith<number>([1, 2], [1, 2], [1, 2], [1, 2], [1, 2], testZipWithFn, any).value();
+
+interface TestZipWithFn2 {
+    (a1: number, a2: string, a3: boolean): Date;
+}
+var testZipWithFn2: TestZipWithFn2;
+result = <number[]>_.zipWith<number>([1, 2]);
+result = <Date[]>_.zipWith<number, Date>([1, 2], testZipWithFn2);
+result = <Date[]>_.zipWith<number, Date>([1, 2], testZipWithFn2, any);
+result = <Date[]>_.zipWith<number, string, Date>([1, 2], ['a', 'b'], testZipWithFn2, any);
+result = <Date[]>_.zipWith<number, string, boolean, number, Date>([1, 2], ['a', 'b'], [true, false], [1, 2], testZipWithFn2, any);
+result = <number[]>_([1, 2]).zipWith<number>().value();
+result = <Date[]>_([1, 2]).zipWith<number, Date>(testZipWithFn2).value();
+result = <Date[]>_([1, 2]).zipWith<number, Date>(testZipWithFn2, any).value();
+result = <Date[]>_([1, 2]).zipWith<number, string, Date>(['a', 'b'], testZipWithFn2, any).value();
+result = <Date[]>_([1, 2]).zipWith<number, string, boolean, number, Date>(['a', 'b'], [true, false], [1, 2], testZipWithFn2, any).value();
 
 /*********
  * Chain *

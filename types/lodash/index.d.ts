@@ -2919,7 +2919,7 @@ declare namespace _ {
          * @return Returns the new array of combined values.
          */
         unionBy<T>(
-            arrays: List<T> | null | undefined,
+            array: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): T[];
 
@@ -2927,8 +2927,8 @@ declare namespace _ {
          * @see _.unionBy
          */
         unionBy<T>(
-            arrays1: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): T[];
 
@@ -2936,9 +2936,9 @@ declare namespace _ {
          * @see _.unionBy
          */
         unionBy<T>(
-            arrays1: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): T[];
 
@@ -2946,10 +2946,10 @@ declare namespace _ {
          * @see _.unionBy
          */
         unionBy<T>(
-            arrays1: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
+            array4: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): T[];
 
@@ -2957,11 +2957,11 @@ declare namespace _ {
          * @see _.unionBy
          */
         unionBy<T>(
-            arrays1: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            arrays5: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
+            array4: List<T> | null | undefined,
+            array5: List<T> | null | undefined,
             ...iteratee: Array<ValueIteratee<T> | List<T> | null | undefined>
         ): T[];
     }
@@ -2980,7 +2980,7 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashImplicitWrapper<T[]>;
 
@@ -2989,8 +2989,8 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashImplicitWrapper<T[]>;
 
@@ -2999,9 +2999,9 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
+            array4: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashImplicitWrapper<T[]>;
 
@@ -3010,10 +3010,10 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            arrays5: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
+            array4: List<T> | null | undefined,
+            array5: List<T> | null | undefined,
             ...iteratee: Array<ValueIteratee<T> | List<T> | null | undefined>
         ): LoDashImplicitWrapper<T[]>;
     }
@@ -3032,7 +3032,7 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashExplicitWrapper<T[]>;
 
@@ -3041,8 +3041,8 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashExplicitWrapper<T[]>;
 
@@ -3051,9 +3051,9 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
+            array4: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashExplicitWrapper<T[]>;
 
@@ -3062,10 +3062,10 @@ declare namespace _ {
          */
         unionBy<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            arrays5: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
+            array4: List<T> | null | undefined,
+            array5: List<T> | null | undefined,
             ...iteratee: Array<ValueIteratee<T> | List<T> | null | undefined>
         ): LoDashExplicitWrapper<T[]>;
     }
@@ -3090,7 +3090,7 @@ declare namespace _ {
          * // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
          */
         unionWith<T>(
-            arrays: List<T> | null | undefined,
+            array: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): T[];
 
@@ -3098,8 +3098,8 @@ declare namespace _ {
          * @see _.unionBy
          */
         unionWith<T>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): T[];
 
@@ -3107,9 +3107,9 @@ declare namespace _ {
          * @see _.unionWith
          */
         unionWith<T>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...comparator: Array<Comparator<T> | List<T> | null | undefined>
         ): T[];
     }
@@ -3128,7 +3128,7 @@ declare namespace _ {
          */
         unionWith<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): LoDashImplicitWrapper<T[]>;
 
@@ -3137,8 +3137,8 @@ declare namespace _ {
          */
         unionWith<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...comparator: Array<Comparator<T> | List<T> | null | undefined>
         ): LoDashImplicitWrapper<T[]>;
     }
@@ -3157,7 +3157,7 @@ declare namespace _ {
          */
         unionWith<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): LoDashExplicitWrapper<T[]>;
 
@@ -3166,8 +3166,8 @@ declare namespace _ {
          */
         unionWith<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...comparator: Array<Comparator<T> | List<T> | null | undefined>
         ): LoDashExplicitWrapper<T[]>;
     }
@@ -3591,7 +3591,7 @@ declare namespace _ {
          * // => [{ 'x': 2 }]
          */
         xorBy<T>(
-            arrays: List<T> | null | undefined,
+            array: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): T[];
 
@@ -3599,8 +3599,8 @@ declare namespace _ {
          * @see _.xorBy
          */
         xorBy<T>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): T[];
 
@@ -3608,9 +3608,9 @@ declare namespace _ {
          * @see _.xorBy
          */
         xorBy<T>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...iteratee: Array<ValueIteratee<T> | List<T> | null | undefined>
         ): T[];
     }
@@ -3629,7 +3629,7 @@ declare namespace _ {
          */
         xorBy<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashImplicitWrapper<T[]>;
 
@@ -3638,8 +3638,8 @@ declare namespace _ {
          */
         xorBy<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...iteratee: Array<ValueIteratee<T> | List<T> | null | undefined>
         ): LoDashImplicitWrapper<T[]>;
     }
@@ -3658,7 +3658,7 @@ declare namespace _ {
          */
         xorBy<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             iteratee?: ValueIteratee<T>
         ): LoDashExplicitWrapper<T[]>;
 
@@ -3667,8 +3667,8 @@ declare namespace _ {
          */
         xorBy<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...iteratee: Array<ValueIteratee<T> | List<T> | null | undefined>
         ): LoDashExplicitWrapper<T[]>;
     }
@@ -3693,7 +3693,7 @@ declare namespace _ {
          * // => [{ 'x': 2, 'y': 1 }, { 'x': 1, 'y': 1 }]
          */
         xorWith<T>(
-            arrays: List<T> | null | undefined,
+            array: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): T[];
 
@@ -3701,8 +3701,8 @@ declare namespace _ {
          * @see _.xorWith
          */
         xorWith<T>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): T[];
 
@@ -3710,9 +3710,9 @@ declare namespace _ {
          * @see _.xorWith
          */
         xorWith<T>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array1: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...comparator: Array<Comparator<T> | List<T> | null | undefined>
         ): T[];
     }
@@ -3731,7 +3731,7 @@ declare namespace _ {
          */
         xorWith<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): LoDashImplicitWrapper<T[]>;
 
@@ -3740,8 +3740,8 @@ declare namespace _ {
          */
         xorWith<T>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...comparator: Array<Comparator<T> | List<T> | null | undefined>
         ): LoDashImplicitWrapper<T[]>;
     }
@@ -3760,7 +3760,7 @@ declare namespace _ {
          */
         xorWith<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
             comparator?: Comparator<T>
         ): LoDashExplicitWrapper<T[]>;
 
@@ -3769,8 +3769,8 @@ declare namespace _ {
          */
         xorWith<T>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
+            array2: List<T> | null | undefined,
+            array3: List<T> | null | undefined,
             ...comparator: Array<Comparator<T> | List<T> | null | undefined>
         ): LoDashExplicitWrapper<T[]>;
     }
@@ -3911,50 +3911,50 @@ declare namespace _ {
          * @see _.zipWith
          */
         zipWith<T, TResult>(
-            arrays: List<T> | null | undefined,
+            array: List<T> | null | undefined,
             iteratee: (value1: T) => TResult
         ): TResult[];
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T) => TResult
+        zipWith<T1, T2, TResult>(
+            array1: List<T1> | null | undefined,
+            array2: List<T2> | null | undefined,
+            iteratee: (value1: T1, value2: T2) => TResult
         ): TResult[];
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T) => TResult
+        zipWith<T1, T2, T3, TResult>(
+            array1: List<T1> | null | undefined,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3) => TResult
         ): TResult[];
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T, value4: T) => TResult
+        zipWith<T1, T2, T3, T4, TResult>(
+            array1: List<T1> | null | undefined,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            array4: List<T4> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3, value4: T4) => TResult
         ): TResult[];
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            arrays: List<T> | null | undefined,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            arrays5: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T, value4: T, value5: T) => TResult
+        zipWith<T1, T2, T3, T4, T5, TResult>(
+            array1: List<T1> | null | undefined,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            array4: List<T4> | null | undefined,
+            array5: List<T5> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3, value4: T4, value5: T5) => TResult
         ): TResult[];
 
         zipWith<T, TResult>(
@@ -3982,42 +3982,47 @@ declare namespace _ {
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T) => TResult
+        zipWith<T1, T2, TResult>(
+            this: LoDashImplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            iteratee: (value1: T1, value2: T2) => TResult
         ): LoDashImplicitWrapper<TResult[]>;
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T) => TResult
+        zipWith<T1, T2, T3, TResult>(
+            this: LoDashImplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3) => TResult
         ): LoDashImplicitWrapper<TResult[]>;
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T, value4: T) => TResult
+        zipWith<T1, T2, T3, T4, TResult>(
+            this: LoDashImplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            array4: List<T4> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3, value4: T4) => TResult
         ): LoDashImplicitWrapper<TResult[]>;
 
         /**
          * @see _.zipWith
          */
+        zipWith<T1, T2, T3, T4, T5, TResult>(
+            this: LoDashImplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            array4: List<T4> | null | undefined,
+            array5: List<T5> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3, value4: T4) => TResult
+        ): LoDashImplicitWrapper<TResult[]>;
+
         zipWith<T, TResult>(
             this: LoDashImplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            arrays5: List<T> | null | undefined,
             ...iteratee: Array<((...group: T[]) => TResult) | List<T> | null | undefined>
         ): LoDashImplicitWrapper<TResult[]>;
     }
@@ -4042,42 +4047,47 @@ declare namespace _ {
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T) => TResult
+        zipWith<T1, T2, TResult>(
+            this: LoDashExplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            iteratee: (value1: T1, value2: T2) => TResult
         ): LoDashExplicitWrapper<TResult[]>;
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T) => TResult
+        zipWith<T1, T2, T3, TResult>(
+            this: LoDashExplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3) => TResult
         ): LoDashExplicitWrapper<TResult[]>;
 
         /**
          * @see _.zipWith
          */
-        zipWith<T, TResult>(
-            this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            iteratee: (value1: T, value2: T, value3: T, value4: T) => TResult
+        zipWith<T1, T2, T3, T4, TResult>(
+            this: LoDashExplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            array4: List<T4> | null | undefined,
+            iteratee: (value1: T1, value2: T2, value3: T3, value4: T4) => TResult
         ): LoDashExplicitWrapper<TResult[]>;
 
         /**
          * @see _.zipWith
          */
+        zipWith<T1, T2, T3, T4, T5, TResult>(
+            this: LoDashExplicitWrapper<List<T1> | null | undefined>,
+            array2: List<T2> | null | undefined,
+            array3: List<T3> | null | undefined,
+            array4: List<T4> | null | undefined,
+            array5: List<T5> | null | undefined,
+            ...iteratee: Array<((...group: T[]) => TResult) | List<T> | null | undefined>
+        ): LoDashExplicitWrapper<TResult[]>;
+
         zipWith<T, TResult>(
             this: LoDashExplicitWrapper<List<T> | null | undefined>,
-            arrays2: List<T> | null | undefined,
-            arrays3: List<T> | null | undefined,
-            arrays4: List<T> | null | undefined,
-            arrays5: List<T> | null | undefined,
             ...iteratee: Array<((...group: T[]) => TResult) | List<T> | null | undefined>
         ): LoDashExplicitWrapper<TResult[]>;
     }
